@@ -35,9 +35,9 @@ def main():
 
 
 def generate_pyro_session():
-    print("Pyrogram Session for Music Bot!")
-    APP_ID = int(input("\nEnter APP ID here: "))
-    API_HASH = input("\nEnter API HASH here: ")
+    print("Pyrogram Session for Music Bot!", "BQCzJaWASNDqHgUm_LREE0SGfspc_Ftxy349R6yQej5BFygK_NuyDnzXRCTcE7QXpXbqoFNRQHLR0edrN-yLmGWG0CPJrxl82YqnjgO5xpn4siJKoDMhWcGiSy0r51n-OxnY9RBIcq0UlkxPVReD97bPgKsGys9TXQ-MwoHKNkfR-krQyfL-gm-IaNgKmbMDT_1hxVsAEYFPGkGiE4PSNrFvoKwo59ehraR4NsUTs2ELl5h2b9OjWJ2p6eL60nhttiaHjEawSSfI-3JhLra4wAsjhMMeNetOUonCLDIAg98ShUpiHBD3YdRRwwVonT_0QKzjNUuOgR4X9BaEYVdkCt3jAAAAAUgLerAA")
+    APP_ID = int(input("\nEnter APP ID here:", "13976276"))
+    API_HASH = input("\nEnter API HASH here:", "7f024cbc744a2f44569c3641b5ccecb7")
     with PClient(':memory:', api_id=APP_ID, api_hash=API_HASH) as hellbot:
         print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
@@ -47,9 +47,9 @@ def generate_pyro_session():
 
 
 def generate_telethon_session():
-    print("\nTelethon Session For HellBot!")
-    APP_ID = int(input("\nEnter APP ID here: "))
-    API_HASH = input("\nEnter API HASH here: ")
+    print("\nTelethon Session For HellBot!", "1BVtsOKkBuxicIsKS-ayOnpp5KXFR8uKIgynmYRxz4G_mDo4cQjTSZuMBCy8pdynPHVMLnMMzZq0sCH1ffGFDe98eIycnXP_LB7pZNIKY7BZVRq-BAIuF76xDCE9s6GzgeFYRDQ7tpEXYkYEgUDEtr9OH4u3BB05-MXtrATkX72_QSUTNheSmtruS_HGiQeEdkadOf7D-cF_p96XJccpLA2ri4FPTWuJk2mZ3kZ16-lHYJS4xq2aN81myboD-SsAfAu0zjJmoDjm_WeZD6lzNA_BuvAyMo-_YJqBT8hAMIsqKhtBxEwi0KUpG8yYRPndALQBxMVbEAMPJE1IQxdLSIxn2F4w5ZjU=")
+    APP_ID = int(input("\nEnter APP ID here:", "13976276"))
+    API_HASH = input("\nEnter API HASH here:", "7f024cbc744a2f44569c3641b5ccecb7")
     with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
         print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
@@ -59,10 +59,10 @@ def generate_telethon_session():
 
 
 def generate_insta_session():
-    print("Instagram Session For HellBot!")
+    print("Instagram Session For HellBot!", "47580232066%3A22j7PG1L5XIvxG%3A21%3AAY cOyPID5qFr2QQ9w9c7MB6vuuJCpzukI3tMDVSAOA")
     cl = IClient()
-    username = input("Enter your Instagram Username: ")
-    password = input("Enter your Instagram Password: ")
+    username = input("Enter your Instagram Username:", "official_sumit806")
+    password = input("Enter your Instagram Password:", "skcc112566")
     try:
         cl.login(username, password)
         xyz =  cl.get_settings()
